@@ -1,0 +1,237 @@
+{
+  "tag": "spike_10_60_10",
+  "mode": "multi",
+  "sessions": 60,
+  "duration_s": 360,
+  "wall_s": 377.9,
+  "requests": 966,
+  "ok": 619,
+  "throughput_rps": 1.638,
+  "error_rate": 0.3592,
+  "status_counts": {
+    "ok": 619,
+    "error_503_admission": 347
+  },
+  "p99_reliable": true,
+  "ttfe": {
+    "p50": 4.15,
+    "p95": 5.836,
+    "p99": 6.417,
+    "max": 7.681,
+    "n": 619
+  },
+  "ttft": {
+    "p50": 6.063,
+    "p95": 7.907,
+    "p99": 8.74,
+    "max": 10.38,
+    "n": 619
+  },
+  "e2e": {
+    "p50": 7.457,
+    "p95": 9.832,
+    "p99": 11.118,
+    "max": 12.134,
+    "n": 619
+  },
+  "itl": {
+    "p50": 0.045,
+    "p95": 0.047,
+    "p99": 0.048,
+    "max": 0.06,
+    "n": 599
+  },
+  "refused_ratio": 0.0323,
+  "turn_dist": {
+    "1": 349,
+    "2": 258,
+    "3": 188,
+    "4": 117,
+    "5": 54
+  },
+  "slo": {
+    "targets": {
+      "ttfe": 5.0,
+      "ttft": 8.0,
+      "e2e": 12.0,
+      "error_rate": 0.01
+    },
+    "p95": {
+      "ttfe": 5.836,
+      "ttft": 7.907,
+      "e2e": 9.832
+    },
+    "error_rate": 0.0,
+    "admission_rejected": 347,
+    "admission_rejected_ratio": 0.3592,
+    "good": 494,
+    "attainment": 0.5114,
+    "goodput_rps": 1.307,
+    "checks": {
+      "ttfe": false,
+      "ttft": true,
+      "e2e": true,
+      "error_rate": true
+    },
+    "met": false
+  },
+  "load": "spike",
+  "phases": [
+    {
+      "phase": 0,
+      "sessions": 10,
+      "seconds": 120,
+      "requests": 115,
+      "ok": 115,
+      "throughput_rps": 0.958,
+      "status_counts": {
+        "ok": 115
+      },
+      "ttft": {
+        "p50": 4.849,
+        "p95": 5.924
+      },
+      "e2e": {
+        "p50": 6.323,
+        "p95": 7.798
+      },
+      "slo": {
+        "targets": {
+          "ttfe": 5.0,
+          "ttft": 8.0,
+          "e2e": 12.0,
+          "error_rate": 0.01
+        },
+        "p95": {
+          "ttfe": 4.204,
+          "ttft": 5.924,
+          "e2e": 7.798
+        },
+        "error_rate": 0.0,
+        "admission_rejected": 0,
+        "admission_rejected_ratio": 0.0,
+        "good": 114,
+        "attainment": 0.9913,
+        "goodput_rps": 0.95,
+        "checks": {
+          "ttfe": true,
+          "ttft": true,
+          "e2e": true,
+          "error_rate": true
+        },
+        "met": true
+      }
+    },
+    {
+      "phase": 1,
+      "sessions": 60,
+      "seconds": 120,
+      "requests": 740,
+      "ok": 393,
+      "throughput_rps": 3.275,
+      "status_counts": {
+        "error_503_admission": 347,
+        "ok": 393
+      },
+      "ttft": {
+        "p50": 6.578,
+        "p95": 8.155
+      },
+      "e2e": {
+        "p50": 8.069,
+        "p95": 10.132
+      },
+      "slo": {
+        "targets": {
+          "ttfe": 5.0,
+          "ttft": 8.0,
+          "e2e": 12.0,
+          "error_rate": 0.01
+        },
+        "p95": {
+          "ttfe": 5.999,
+          "ttft": 8.155,
+          "e2e": 10.132
+        },
+        "error_rate": 0.0,
+        "admission_rejected": 347,
+        "admission_rejected_ratio": 0.4689,
+        "good": 270,
+        "attainment": 0.3649,
+        "goodput_rps": 2.25,
+        "checks": {
+          "ttfe": false,
+          "ttft": false,
+          "e2e": true,
+          "error_rate": true
+        },
+        "met": false
+      }
+    },
+    {
+      "phase": 2,
+      "sessions": 10,
+      "seconds": 120,
+      "requests": 111,
+      "ok": 111,
+      "throughput_rps": 0.925,
+      "status_counts": {
+        "ok": 111
+      },
+      "ttft": {
+        "p50": 4.924,
+        "p95": 5.978
+      },
+      "e2e": {
+        "p50": 6.392,
+        "p95": 7.675
+      },
+      "slo": {
+        "targets": {
+          "ttfe": 5.0,
+          "ttft": 8.0,
+          "e2e": 12.0,
+          "error_rate": 0.01
+        },
+        "p95": {
+          "ttfe": 4.224,
+          "ttft": 5.978,
+          "e2e": 7.675
+        },
+        "error_rate": 0.0,
+        "admission_rejected": 0,
+        "admission_rejected_ratio": 0.0,
+        "good": 110,
+        "attainment": 0.991,
+        "goodput_rps": 0.917,
+        "checks": {
+          "ttfe": true,
+          "ttft": true,
+          "e2e": true,
+          "error_rate": true
+        },
+        "met": true
+      }
+    }
+  ],
+  "config": {
+    "api": "http://localhost:8000",
+    "load": "spike",
+    "sessions": 60,
+    "arrival_rate": 0.0,
+    "phases": "10:120,60:120,10:120",
+    "duration": 360,
+    "grace": 120,
+    "mode": "multi",
+    "min_turns": 1,
+    "max_turns": 5,
+    "think_mean": 8.0,
+    "timeout": 120.0,
+    "tag": "spike_10_60_10",
+    "seed": 42,
+    "slo_ttfe": 5.0,
+    "slo_ttft": 8.0,
+    "slo_e2e": 12.0,
+    "slo_error_rate": 0.01
+  }
+}

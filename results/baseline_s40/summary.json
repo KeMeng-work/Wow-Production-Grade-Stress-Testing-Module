@@ -1,0 +1,65 @@
+{
+  "tag": "baseline_s40",
+  "mode": "multi",
+  "sessions": 40,
+  "duration_s": 300,
+  "wall_s": 333.5,
+  "requests": 401,
+  "ok": 399,
+  "throughput_rps": 1.196,
+  "error_rate": 0.005,
+  "status_counts": {
+    "error_500": 2,
+    "ok": 399
+  },
+  "p99_reliable": false,
+  "ttfe": {
+    "p50": 13.133,
+    "p95": 20.329,
+    "p99": 21.517,
+    "max": 22.734,
+    "n": 399
+  },
+  "ttft": {
+    "p50": 19.967,
+    "p95": 24.964,
+    "p99": 26.899,
+    "max": 27.829,
+    "n": 399
+  },
+  "e2e": {
+    "p50": 25.561,
+    "p95": 33.885,
+    "p99": 38.619,
+    "max": 41.172,
+    "n": 399
+  },
+  "itl": {
+    "p50": 0.108,
+    "p95": 0.288,
+    "p99": 0.359,
+    "max": 0.442,
+    "n": 387
+  },
+  "refused_ratio": 0.0301,
+  "turn_dist": {
+    "1": 146,
+    "2": 109,
+    "3": 76,
+    "4": 50,
+    "5": 20
+  },
+  "config": {
+    "api": "http://localhost:8000",
+    "sessions": 40,
+    "duration": 300,
+    "grace": 120,
+    "mode": "multi",
+    "min_turns": 1,
+    "max_turns": 5,
+    "think_mean": 8.0,
+    "timeout": 120.0,
+    "tag": "baseline_s40",
+    "seed": 42
+  }
+}

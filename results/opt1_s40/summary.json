@@ -1,0 +1,64 @@
+{
+  "tag": "opt1_s40",
+  "mode": "multi",
+  "sessions": 40,
+  "duration_s": 300,
+  "wall_s": 316.8,
+  "requests": 959,
+  "ok": 959,
+  "throughput_rps": 3.028,
+  "error_rate": 0.0,
+  "status_counts": {
+    "ok": 959
+  },
+  "p99_reliable": true,
+  "ttfe": {
+    "p50": 4.023,
+    "p95": 5.537,
+    "p99": 8.446,
+    "max": 9.466,
+    "n": 959
+  },
+  "ttft": {
+    "p50": 6.034,
+    "p95": 7.787,
+    "p99": 10.264,
+    "max": 11.681,
+    "n": 959
+  },
+  "e2e": {
+    "p50": 7.535,
+    "p95": 9.807,
+    "p99": 11.502,
+    "max": 14.926,
+    "n": 959
+  },
+  "itl": {
+    "p50": 0.045,
+    "p95": 0.047,
+    "p99": 0.051,
+    "max": 0.062,
+    "n": 924
+  },
+  "refused_ratio": 0.0365,
+  "turn_dist": {
+    "1": 336,
+    "2": 255,
+    "3": 187,
+    "4": 125,
+    "5": 56
+  },
+  "config": {
+    "api": "http://localhost:8000",
+    "sessions": 40,
+    "duration": 300,
+    "grace": 120,
+    "mode": "multi",
+    "min_turns": 1,
+    "max_turns": 5,
+    "think_mean": 8.0,
+    "timeout": 120.0,
+    "tag": "opt1_s40",
+    "seed": 42
+  }
+}

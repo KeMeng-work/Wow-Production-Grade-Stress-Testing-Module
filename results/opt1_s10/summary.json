@@ -1,0 +1,64 @@
+{
+  "tag": "opt1_s10",
+  "mode": "multi",
+  "sessions": 10,
+  "duration_s": 300,
+  "wall_s": 313.6,
+  "requests": 268,
+  "ok": 268,
+  "throughput_rps": 0.855,
+  "error_rate": 0.0,
+  "status_counts": {
+    "ok": 268
+  },
+  "p99_reliable": false,
+  "ttfe": {
+    "p50": 3.19,
+    "p95": 4.159,
+    "p99": 4.648,
+    "max": 5.813,
+    "n": 268
+  },
+  "ttft": {
+    "p50": 4.884,
+    "p95": 5.91,
+    "p99": 6.326,
+    "max": 7.248,
+    "n": 268
+  },
+  "e2e": {
+    "p50": 6.243,
+    "p95": 7.912,
+    "p99": 8.58,
+    "max": 10.421,
+    "n": 268
+  },
+  "itl": {
+    "p50": 0.045,
+    "p95": 0.047,
+    "p99": 0.047,
+    "max": 0.047,
+    "n": 260
+  },
+  "refused_ratio": 0.0299,
+  "turn_dist": {
+    "1": 97,
+    "2": 72,
+    "3": 55,
+    "4": 34,
+    "5": 10
+  },
+  "config": {
+    "api": "http://localhost:8000",
+    "sessions": 10,
+    "duration": 300,
+    "grace": 120,
+    "mode": "multi",
+    "min_turns": 1,
+    "max_turns": 5,
+    "think_mean": 8.0,
+    "timeout": 120.0,
+    "tag": "opt1_s10",
+    "seed": 42
+  }
+}

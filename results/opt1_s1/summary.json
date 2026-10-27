@@ -1,0 +1,64 @@
+{
+  "tag": "opt1_s1",
+  "mode": "multi",
+  "sessions": 1,
+  "duration_s": 300,
+  "wall_s": 323.5,
+  "requests": 30,
+  "ok": 30,
+  "throughput_rps": 0.093,
+  "error_rate": 0.0,
+  "status_counts": {
+    "ok": 30
+  },
+  "p99_reliable": false,
+  "ttfe": {
+    "p50": 3.26,
+    "p95": 4.099,
+    "p99": 4.18,
+    "max": 4.194,
+    "n": 30
+  },
+  "ttft": {
+    "p50": 4.678,
+    "p95": 5.668,
+    "p99": 5.726,
+    "max": 5.742,
+    "n": 30
+  },
+  "e2e": {
+    "p50": 6.145,
+    "p95": 7.525,
+    "p99": 7.887,
+    "max": 7.972,
+    "n": 30
+  },
+  "itl": {
+    "p50": 0.045,
+    "p95": 0.046,
+    "p99": 0.046,
+    "max": 0.046,
+    "n": 27
+  },
+  "refused_ratio": 0.1,
+  "turn_dist": {
+    "1": 10,
+    "2": 7,
+    "3": 6,
+    "4": 5,
+    "5": 2
+  },
+  "config": {
+    "api": "http://localhost:8000",
+    "sessions": 1,
+    "duration": 300,
+    "grace": 120,
+    "mode": "multi",
+    "min_turns": 1,
+    "max_turns": 5,
+    "think_mean": 8.0,
+    "timeout": 120.0,
+    "tag": "opt1_s1",
+    "seed": 42
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "source": "校准自 Langfuse R3 全量评测（eval_r3_v1t_all，2026-10-04，qwen3-30b-a3b，364 次调用/185 条 trace）。ttft_s 直接取实测；思考/答案 token 与出字速度按（总耗时 − 首字延迟）反推，答案长度取 R3 实际答案字数；p_extra_retrieval=0 因 R3 无二次检索。token 用量待 stream_usage=True 后复核",
+  "chars_per_token": 2.0,
+  "ttft_ref_input_tokens": 3000,
+  "ttft_per_1k_extra_input_s": 0.0,
+  "p_extra_retrieval": 0.0,
+  "max_retrievals": 3,
+  "calls": {
+    "tool": {
+      "ttft_s":          {"p50": 0.31, "p95": 0.47, "min": 0.22, "max": 1.0},
+      "thinking_tokens": {"p50": 196,  "p95": 290,  "min": 100,  "max": 900},
+      "content_tokens":  {"p50": 0,    "p95": 1,    "min": 0,    "max": 1},
+      "tokens_per_s":    {"p50": 90,   "p95": 92,   "min": 85,   "max": 95}
+    },
+    "answer": {
+      "ttft_s":          {"p50": 0.31, "p95": 0.49, "min": 0.22, "max": 1.0},
+      "thinking_tokens": {"p50": 105,  "p95": 132,  "min": 40,   "max": 450},
+      "content_tokens":  {"p50": 121,  "p95": 235,  "min": 29,   "max": 400},
+      "tokens_per_s":    {"p50": 90,   "p95": 92,   "min": 85,   "max": 95}
+    }
+  }
+}

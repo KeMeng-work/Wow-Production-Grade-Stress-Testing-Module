@@ -1,0 +1,64 @@
+{
+  "tag": "baseline_s10",
+  "mode": "multi",
+  "sessions": 10,
+  "duration_s": 300,
+  "wall_s": 316.1,
+  "requests": 235,
+  "ok": 235,
+  "throughput_rps": 0.744,
+  "error_rate": 0.0,
+  "status_counts": {
+    "ok": 235
+  },
+  "p99_reliable": false,
+  "ttfe": {
+    "p50": 3.784,
+    "p95": 6.121,
+    "p99": 7.117,
+    "max": 7.96,
+    "n": 235
+  },
+  "ttft": {
+    "p50": 5.931,
+    "p95": 8.433,
+    "p99": 9.104,
+    "max": 9.869,
+    "n": 235
+  },
+  "e2e": {
+    "p50": 7.583,
+    "p95": 10.489,
+    "p99": 11.648,
+    "max": 13.074,
+    "n": 235
+  },
+  "itl": {
+    "p50": 0.046,
+    "p95": 0.077,
+    "p99": 0.102,
+    "max": 0.131,
+    "n": 227
+  },
+  "refused_ratio": 0.034,
+  "turn_dist": {
+    "1": 83,
+    "2": 61,
+    "3": 49,
+    "4": 32,
+    "5": 10
+  },
+  "config": {
+    "api": "http://localhost:8000",
+    "sessions": 10,
+    "duration": 300,
+    "grace": 120,
+    "mode": "multi",
+    "min_turns": 1,
+    "max_turns": 5,
+    "think_mean": 8.0,
+    "timeout": 120.0,
+    "tag": "baseline_s10",
+    "seed": 42
+  }
+}

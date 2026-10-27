@@ -1,0 +1,98 @@
+{
+  "tag": "real_s10",
+  "mode": "multi",
+  "sessions": 10,
+  "duration_s": 300,
+  "wall_s": 332.6,
+  "requests": 263,
+  "ok": 263,
+  "throughput_rps": 0.791,
+  "error_rate": 0.0,
+  "status_counts": {
+    "ok": 263
+  },
+  "p99_reliable": false,
+  "ttfe": {
+    "p50": 3.686,
+    "p95": 5.051,
+    "p99": 5.667,
+    "max": 6.782,
+    "n": 263
+  },
+  "ttft": {
+    "p50": 5.99,
+    "p95": 8.582,
+    "p99": 9.816,
+    "max": 14.811,
+    "n": 263
+  },
+  "e2e": {
+    "p50": 6.654,
+    "p95": 9.418,
+    "p99": 10.742,
+    "max": 15.287,
+    "n": 263
+  },
+  "itl": {
+    "p50": 0.028,
+    "p95": 0.036,
+    "p99": 0.038,
+    "max": 0.043,
+    "n": 255
+  },
+  "refused_ratio": 0.0304,
+  "turn_dist": {
+    "1": 95,
+    "2": 70,
+    "3": 54,
+    "4": 34,
+    "5": 10
+  },
+  "slo": {
+    "targets": {
+      "ttfe": 5.0,
+      "ttft": 8.0,
+      "e2e": 12.0,
+      "error_rate": 0.01
+    },
+    "p95": {
+      "ttfe": 5.051,
+      "ttft": 8.582,
+      "e2e": 9.418
+    },
+    "error_rate": 0.0,
+    "admission_rejected": 0,
+    "admission_rejected_ratio": 0.0,
+    "good": 232,
+    "attainment": 0.8821,
+    "goodput_rps": 0.697,
+    "checks": {
+      "ttfe": false,
+      "ttft": false,
+      "e2e": true,
+      "error_rate": true
+    },
+    "met": false
+  },
+  "load": "closed",
+  "config": {
+    "api": "http://localhost:8000",
+    "load": "closed",
+    "sessions": 10,
+    "arrival_rate": 0.0,
+    "phases": "",
+    "duration": 300,
+    "grace": 120,
+    "mode": "multi",
+    "min_turns": 1,
+    "max_turns": 5,
+    "think_mean": 8.0,
+    "timeout": 120.0,
+    "tag": "real_s10",
+    "seed": 42,
+    "slo_ttfe": 5.0,
+    "slo_ttft": 8.0,
+    "slo_e2e": 12.0,
+    "slo_error_rate": 0.01
+  }
+}
