@@ -4,5 +4,5 @@ __pycache__/
 *.log
 *.pid
 *.out
-results/*/requests.jsonl
-results/env_snapshot/
+loadtest/results/*/requests.jsonl
+loadtest/results/env_snapshot/
